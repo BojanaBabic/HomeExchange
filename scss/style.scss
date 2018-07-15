@@ -226,5 +226,14 @@ section {
 		}
 	}
 }
+footer { 
+	padding: 1em;
+	text-align: center;
+	width: 100%;
+	background: $main_dark;
+	color: #fff;
+
+	span { color: $main_orange; }
+}
 
 

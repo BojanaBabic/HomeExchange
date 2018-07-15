@@ -101,3 +101,32 @@ section {
 .filter {
 	text-align: right;
 }
+.rooms {
+	background: $section_grey;
+}
+
+.column {
+	width: 20%;
+	height: 20em;
+	float: left;
+	margin: 1em;
+
+	.columnInfo {
+		display: none;
+		width: 100%;
+		height: 40%;
+		background: rgba(255, 255, 255, 0.7);
+		padding: 1em;
+
+		h1, h2 { font-weight: normal; }
+	}
+
+	&:hover .columnInfo { display: block; }
+
+	@for $i from 1 through 6 {
+		&.column#{$i} { 
+			background: url('../slike/#{$i}.jpg'); 
+			background-size: cover;	
+		}
+	}
+}

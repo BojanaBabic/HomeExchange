@@ -179,5 +179,52 @@ section {
 	}
 
 	.pricingButton { display: none; }
-
 }
+.contact {
+	background: $section_grey;
+
+	.mapHolder {
+		float: left;
+		margin: 1em;
+		width: 30%;
+
+		iframe {
+			width: 100%;
+		}
+	}
+
+	form {
+		width: 60%;
+		margin: 1em;
+		float: right;
+		padding: 1em;
+		background: $main_orange;
+
+		.contactInput {
+			float: left;
+			padding: .5em;
+			color: $main_dark;
+			border: none;
+			margin: 1em;
+		}
+
+		select {
+			width: 20%;
+		}
+
+		.contactInput[type="text"] {
+			float: right;
+			width: 70%;
+		}
+
+		.contactInput[type="email"] {
+			width: 96%;
+		}
+
+		textarea.contactInput {
+			width: 96%;
+		}
+	}
+}
+
+
